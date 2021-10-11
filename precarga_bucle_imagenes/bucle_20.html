@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Preload Image</title>
+<script type="text/javascript">
+var imageData = [
+    //Example Images
+    '001.jpg','002.jpg','003.jpg',
+    '004.jpg','005.jpg'
+];
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function demo(x) {
+    for(x = 0, y = 5; x < y; x++){
+    var imagenes=document.getElementsByTagName("img");
+    imagenes[x].style.display = "";
+    
+    await sleep(20000);
+    
+    }
+
+}
+
+function preloadImage(data)
+{
+    var base_path = 'images/';
+    var total = data.length;
+    var i = 0;
+    var imgArray = new Array();
+    for(i=0; i<total; i++)
+    {
+    var tmpImage = new Image();
+    tmpImage.src = base_path + data[i];
+    imgArray.push(tmpImage);
+    }
+    demo();
+}
+
+
+
+    /*function img(){
+    for(x = 1, y = 5; x <= y; ++x){
+       // document.write( '<img src=\"img/int_'+x+'.jpg\">' );
+       var mu=document.getElementById('muestra');
+       var col=document.createElement('td');
+       var im=document.createTextNode( '<img src=\"img/int_'+x+'.jpg\">' );
+       col.appendChild(im);
+       mu.appendChild(col);
+
+    }
+}*/
+
+</script>
+</head>
+
+<body onload="preloadImage(imageData);">
+<!--<body>-->
+<table border="0" cellpadding="0" cellspacing="0">
+    <tr id="muestra">
+        
+    </tr>
+    
+    
+</table>
+
+<script>
+    /*function creaim(x){
+    var aux= 'images/00'+x+'.jpg';
+    var mu=document.getElementById('muestra');
+    var col=document.createElement('td');
+    var ima=document.createElement('img');
+    ima.setAttribute( 'src',aux );
+    col.appendChild(ima);
+    mu.appendChild(col);
+}
+
+
+    function img(){
+    for(x = 1, y = 5; x <= y; x++){
+       // document.write( '<img src=\"img/int_'+x+'.jpg\">' );
+
+       var aux= 'images/00'+x+'.jpg';
+       //setTimeout(creaim(aux),20000);
+       var mu=document.getElementById('muestra');
+       var col=document.createElement('td');
+       var ima=document.createElement('img');
+       ima.setAttribute( 'src',aux );
+       col.appendChild(ima);
+       mu.appendChild(col);
+
+
+
+    }
+}*/
+
+
+
+
+
+/*for(x = 1, y = 5; x <= y; x++){
+    var aux= 'images/00'+x+'.jpg';
+    var mu=document.getElementById('muestra');
+    var col=document.createElement('td');
+    var ima=document.createElement('img');
+    ima.setAttribute( 'src',aux );
+    ima.setAttribute( 'style','display:none' );
+    col.appendChild(ima);
+    mu.appendChild(col);
+}*/
+
+
+
+
+
+    for(x = 1, y = 5; x <= y; x++){
+        var aux= 'images/00'+x+'.jpg';
+        var mu=document.getElementById('muestra');
+        var col=document.createElement('td');
+        var ima=document.createElement('img');
+        ima.setAttribute( 'src',aux );
+        ima.setAttribute( 'style','display:none' );
+        col.appendChild(ima);
+        mu.appendChild(col);
+    }
+
+//img();
+</script>
+
+</body>
+</html>
