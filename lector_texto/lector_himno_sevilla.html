@@ -1,0 +1,104 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Himno</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+
+
+    <style>
+      
+      #textarea > * {
+        
+    display: none;
+        border: none;
+        resize: none;
+        top: 0;
+        left: 0;
+        width: calc(100% - 1rem);
+        height: calc(100% - 1rem);
+        margin: .5rem;
+        padding: 0;
+        white-space: pre-wrap;
+        line-height: 1.1rem;
+        background-color: transparent;
+        font-size: 12px;
+        font-family: monospace;
+      }
+
+      .botonsito{
+      	border-radius: 15px;
+      	border:solid;
+      }
+
+    </style>
+
+  </head>
+
+
+
+
+
+  <body class="loading">
+<!--Texto para que se viese bien------------------------------------------------------------------------------------------->  
+
+<div>
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
+<silence msec="1000"/>
+
+<voice required="Name=Microsoft David Desktop">Cuentan las lenguas antiguas que un 14 de octubre nació una ilusión su madre fue Sevilla, y le prestó su nombre y para defenderlo le dio a una afición…</voice>
+<br>
+<voice required="Name=Microsoft Helena Desktop">Ejemplo de sevillanía familia roja y blanca del Sánchez Pizjuán mi corazón que late gritando ¡Sevilla!, llevándolo en volandas por siempre a ganar…</voice>
+<br>
+<voice required="Name=Microsoft Zira Desktop">Y es por eso que hoy vengo a verte, sevillista seré hasta la muerte, la Giralda presume orgullosa de ver al Sevilla en el Sánchez Pizjuán.</voice>
+</speak>
+</div>
+
+
+<!--BOTON---------------------------------------------------------->
+        <div class="bottom">
+        <!--<div class="widebutton">-->
+        <button class="botonsito" type="button" id="preachit" onmousedown="speak();">Leer</button>
+        </div>
+
+    
+
+<!--TEXTAREA-------------------------------------------------------------->
+<form>
+  <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
+  <silence msec="1000"/>
+  <div id="textarea"><!--Se pone un readonly para que no se pueda modificar y solo muestre-->
+<!--Por qué solo funciona con un textarea?????----------->
+  <textarea id="texttospeak" readonly="readonly">   
+
+
+
+<voice required="Name=Microsoft David Desktop">Cuentan las lenguas antiguas que un 14 de octubre nació una ilusión su madre fue Sevilla, y le prestó su nombre y para defenderlo le dio a una afición…</voice>
+
+<voice required="Name=Microsoft Helena Desktop">Ejemplo de sevillanía familia roja y blanca del Sánchez Pizjuán mi corazón que late gritando ¡Sevilla!, llevándolo en volandas por siempre a ganar…</voice>
+
+<voice required="Name=Microsoft Zira Desktop">Y es por eso que hoy vengo a verte, sevillista seré hasta la muerte, la Giralda presume orgullosa de ver al Sevilla en el Sánchez Pizjuán.</textarea>
+</speak></div>
+
+</div>
+
+</form>
+
+
+<!--FIN TEXTAREA Y FORMULARIO-------------------------------------->
+
+
+      <script type="text/javascript">
+        var texttospeak = document.getElementById('texttospeak');     /*ESTO SÍ*/
+        var speechtext;
+        
+
+        function speak() {
+          speechtext = texttospeak.value;
+          utterance = new SpeechSynthesisUtterance(document.getElementById('texttospeak').value);
+          speechSynthesis.speak(utterance);
+        }
+
+
+      </script>
+  
+
+</body>
+</html>
