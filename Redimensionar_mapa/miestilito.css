@@ -1,0 +1,250 @@
+*{
+	margin:auto;
+    width: 99%;
+}
+
+.titulonoticia{
+
+	font-size: 350%;
+	margin-top: 5%;
+	margin-bottom: -5%;
+
+
+	
+}
+
+.provincia_sevilla {
+
+	text-decoration: underline;
+}
+
+.provincia_cadiz {
+
+	text-decoration: underline;
+}
+
+.provincia_malaga{
+
+	text-decoration: underline;
+}
+
+.provincia_huelva{
+
+	text-decoration: underline;
+}
+
+.provincia_cordoba{
+
+	text-decoration: underline;
+}
+
+.provincia_jaen{
+
+	text-decoration: underline;
+}
+
+.provincia_almeria {
+
+	text-decoration: underline;
+}
+
+.provincia_granada {
+
+	text-decoration: underline;
+}
+
+.principal_sevilla {
+
+	background-color: #D67229;
+	font-size: medium;
+	/*color: black;*/
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.principal_cadiz {
+
+	/*background-color: #3378ae;*/
+	font-size: medium;
+	/*color: black;*/
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.principal_malaga {
+
+	/*background-color: #f9db4a;*/
+	font-size: medium;
+	/*color: black;*/
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.principal_granada {
+
+	/*background-color: rgba(108, 200, 17,0.8);*/
+	font-size: medium;
+	/*color: black;*/
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.principal_almeria {
+
+	/*background-color: #b4806d;*/
+	font-size: medium;
+	/*color: black;*/
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.principal_cordoba {
+
+	/*background-color: #779ecb;*/
+	font-size: medium;
+	/*color: black;*/
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.principal_jaen {
+
+	/*background-color: #9b111e;*/
+	font-size: medium;
+	/*color: black;*/
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.principal_huelva {
+
+	/*background-color: #e0d8b0;*/
+	font-size: medium;
+	/*color: black;*/
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.pueblo_sevilla {
+
+	/*background-color:orangered;*/
+	background-color:rgba(250, 193, 94,0.65);
+
+	margin-bottom: 5%;
+}
+
+.pueblo_cadiz {
+
+	/*background-color: #3378ae;*/
+	background-color: #2898ee;
+
+	margin-bottom: 5%;
+}
+
+.pueblo_malaga {
+
+	background-color: #f9ff4a;
+
+	margin-bottom: 5%;
+}
+
+.pueblo_granada {
+
+	background-color: #aef359;
+
+	margin-bottom: 5%;
+}
+
+.pueblo_almeria {
+
+	background-color: #b97c4a;
+
+	margin-bottom: 5%;
+}
+
+.pueblo_cordoba {
+
+	background-color: #6165d2;
+
+	margin-bottom: 5%;
+}
+
+.pueblo_jaen {
+
+	background-color: #c63637;
+
+	margin-bottom: 5%;
+}
+
+.pueblo_huelva {
+
+	/*background-color: #556b2f;*/
+	background-color: rgba(108, 174, 17,0.65);
+
+	margin-bottom: 5%;
+}
+
+table {
+
+	border: solid 1px;
+	
+}
+
+tr {
+	border: solid 1px;
+}
+
+.enlaces{
+	background-color: rgba(255,255,255,0.72);
+}
+
+td{
+	border:solid 0px;
+}
+ .icon{
+ 	color:black;
+ }
+
+img{
+	 max-width: 85%;
+     max-height: 85%;
+}
+td{
+	text-indent: 10px;
+	
+}
+
+
+.mapa {
+
+	max-width: 60%;
+	max-height: 60%;
+	/*background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/9a/Bandera_de_Andalucia.svg");
+	background-position: 120%;*/
+}
+
+.opacidad{
+
+	opacity: 0.2;
+}
+
+body {
+
+	background-color: #eeeeee;
+}
