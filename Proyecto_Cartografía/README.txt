@@ -1,0 +1,1 @@
+3 páginas de cartografía para la US, contiene tablas y un código para hacer un desplegable, además de un mapa que utiliza la etiqueta <map> con coordenadas, utiliza el ejemplo de la carpeta anterior para redimensionar el mapa
