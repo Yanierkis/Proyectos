@@ -1,0 +1,98 @@
+
+
+
+.cabecera {
+	background-image: url("fondocabecera1.png");
+	background-repeat: repeat-x;  
+}
+
+
+.titulonoticia{
+
+	font-size: 350%;
+	margin-top: 5%;
+	margin-bottom: -5%;
+
+
+	
+}
+
+a{
+	color:black;
+}
+
+.texto-borde {
+	-webkit-text-stroke: 2px green;
+	color: transparent; 
+  }
+
+.provincia_sevilla {
+
+	text-decoration: underline;
+}
+
+
+.principal_sevilla {
+
+	background-color: #D67229;
+	font-size: medium;
+	color: black;
+	
+	font-weight: 750;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+
+
+.pueblo_sevilla {
+
+
+	background-color:rgba(250, 193, 94,0.65);
+
+	margin-bottom: 5%;
+}
+
+
+
+table {
+	margin-top:2%;
+    height: 100%;
+	border: solid 1px;
+	
+}
+
+tr {
+	border: solid 1px;
+}
+
+
+td{
+	border:solid 0px;
+}
+
+
+/*img{
+	 max-width: 85%;
+     max-height: 85%;
+}*/
+td{
+	text-indent: 10px;
+	
+}
+
+
+body {
+
+	background-color: #eeeeee;
+}
+
+.logo{
+	height: 80%;
+   
+    border:ridge; 
+    
+    border-radius: 100%;
+
+
+}

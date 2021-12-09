@@ -1,0 +1,2381 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="ios-orientationchange-fix.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="miestilito.css">
+	<title>Cartografía Andalucía</title>
+	<div class="cabecera display-2 text-center ">
+		<h1 style=" color: #660000; font-size:56px;"> CARTOETSA</h1>
+		<h3 class="mt-0 mb-0" style=" color: black; "> Mapa de cartografía digital</h3>
+	</div>
+
+
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #660000;">
+			
+				<a href="https://www.us.es/" class="navbar-brand">
+					<img class="logo" style="margin-left: 8%;" src="us.jpg" height="50%" width="50%" alt="CoolBrand">
+				</a>
+				<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<div class="navbar-nav">
+						<a style="font-size: large;"
+							href="mapas.html"
+							class="nav-item nav-link active">Mapa pueblos Andalucía</a>
+						<a style="font-size: large;"
+							href="mapa_grande.html"
+							class="nav-item nav-link active">Mapa topográfico Andalucía</a>
+						<a style="font-size: large;" href="tercera.html" class="nav-item nav-link active">Enlaces de interés</a>
+
+					</div>
+					<div class="container">
+						<p style="float: right; color: white;"> <a style="color: white; font-size: large;"
+								href="https://bib.us.es/arquitectura/">Biblioteca de
+								Arquitectura de la Universidad de Sevilla </a></p>
+					</div>
+				</div>
+			
+		</nav>
+	</div>
+	<h1 class="titulonoticia pb-5" style="text-align: center;" mce_style="text-align: center;">
+		Portal de
+		cartografía digital <grad style="color: green">An</grad><grad class="texto-borde">da</grad><grad style="color: green">lu</grad><grad class="texto-borde">ci</grad><grad style="color: green">a</grad>
+	</h1>
+
+	<script type="text/javascript">
+		function desplegar(tabla_a_desplegar, estadoT) {
+			var tablA = document.getElementById(tabla_a_desplegar);
+			var estadOt = document.getElementById(estadoT);
+
+			switch (tablA.style.display) {
+				case "none":
+					tablA.style.display = "block";
+					estadOt.innerHTML = "Ocultar coneNido"
+					break;
+				default:
+					tablA.style.display = "none";
+					estadOt.innerHTML = "Mostrar coNteNido"
+					break;
+			}
+		}
+	</script>
+
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		<div class='row'>
+			<div class="col-md-12">
+
+				<h1 class="titulonoticia">&nbsp;</h1>
+				<div class="mapa">
+					<p class="text-center mt-5" style="width: 100vw;" >
+						<img src="http://institucional.us.es/rrcartografia/images/cartografia/andalucia.png"
+							class="img-fluid mapa2" usemap="#andalucia_Map" mce_src="images/cartografia/andalucia.png"
+							height="216" border="0" width="368" >
+						<map name="andalucia_Map"><area id="sombra" href="#granada" shape="poly" target="_self"
+								coords="197,119, 199,133, 225,148, 231,154, 236,160, 249,163, 273,157, 274,153, 272,152, 277,148, 280,144, 277,142, 281,137, 278,127, 284,126, 289,115, 301,119, 301,107, 308,100, 321,97, 318,93, 318,88, 324,86, 326,68, 329,66, 312,46, 305,60, 296,60, 284,78, 288,84, 275,89, 269,86, 256,93, 246,87, 245,93, 229,98, 225,107, 215,102, 208,112, 205,115, 194,113"
+								mce_href="#granada"
+								mce_coords="197,119, 199,133, 225,148, 231,154, 236,160, 249,163, 273,157, 274,153, 272,152, 277,148, 280,144, 277,142, 281,137, 278,127, 284,126, 289,115, 301,119, 301,107, 308,100, 321,97, 318,93, 318,88, 324,86, 326,68, 329,66, 312,46, 305,60, 296,60, 284,78, 288,84, 275,89, 269,86, 256,93, 246,87, 245,93, 229,98, 225,107, 215,102, 208,112, 205,115, 194,113"
+								mce_shape="poly" title="Granada" alt="Granada"><area class="sombra" href="#cordoba"
+								shape="poly" target="_self"
+								coords="123,44, 123,25, 145,1, 159,1, 202,33, 207,45, 200,54, 201,57, 200,77, 203,78, 206,83, 203,89, 215,102, 205,114, 194,113, 187,119, 176,118, 176,115, 176,107, 167,107, 153,78, 133,89, 130,82, 136,76"
+								mce_href="#cordoba"
+								mce_coords="123,44, 123,25, 145,1, 159,1, 202,33, 207,45, 200,54, 201,57, 200,77, 203,78, 206,83, 203,89, 215,102, 205,114, 194,113, 187,119, 176,118, 176,115, 176,107, 167,107, 153,78, 133,89, 130,82, 136,76"
+								mce_shape="poly" title="Córdoba" alt="Córdoba"><area class="sombra" href="#cadiz"
+								shape="poly" target="_self"
+								coords="70,142, 68,148, 69,153, 63,153, 66,160, 87,197, 87,198, 91,194, 117,214, 137,198, 125,173, 117,172, 132,159, 133,152, 131,148, 139,144, 142,148, 149,141, 146,138, 140,139, 134,133, 127,140, 126,133, 117,143, 112,136, 97,148"
+								mce_href="#cadiz"
+								mce_coords="70,142, 68,148, 69,153, 63,153, 66,160, 87,197, 87,198, 91,194, 117,214, 137,198, 125,173, 117,172, 132,159, 133,152, 131,148, 139,144, 142,148, 149,141, 146,138, 140,139, 134,133, 127,140, 126,133, 117,143, 112,136, 97,148"
+								mce_shape="poly" title="Cádiz" alt="Cádiz"><area class="sombra" href="#sevilla"
+								shape="poly" target="_self"
+								coords="72,139, 96,148, 113,136, 118,142, 126,130, 127,139, 134,132, 140,138, 146,136, 160,126, 159,120, 172,121, 176,115, 176,107, 167,107, 153,79, 133,89, 129,81, 135,76, 122,43, 110,39, 87,64, 79,77, 69,77, 59,81, 62,86, 70,93, 75,107, 74,116, 70,122, 69,134"
+								mce_href="#sevilla"
+								mce_coords="72,139, 96,148, 113,136, 118,142, 126,130, 127,139, 134,132, 140,138, 146,136, 160,126, 159,120, 172,121, 176,115, 176,107, 167,107, 153,79, 133,89, 129,81, 135,76, 122,43, 110,39, 87,64, 79,77, 69,77, 59,81, 62,86, 70,93, 75,107, 74,116, 70,122, 69,134"
+								mce_shape="poly" title="Sevilla" alt="Sevilla"><area class="sombra" href="#huelva"
+								shape="poly" target="_self"
+								coords="67,148, 52,126, 34,112, 21,111, 11,113, 8,114, 0,83, 20,53, 34,50, 39,39, 55,47, 60,53, 70,53, 87,63, 78,76, 69,76, 59,81, 60,85, 65,88, 71,95, 75,107, 73,117, 69,124, 69,129, 69,139, 69,144"
+								mce_href="#huelva"
+								mce_coords="67,148, 52,126, 34,112, 21,111, 11,113, 8,114, 0,83, 20,53, 34,50, 39,39, 55,47, 60,53, 70,53, 87,63, 78,76, 69,76, 59,81, 60,85, 65,88, 71,95, 75,107, 73,117, 69,124, 69,129, 69,139, 69,144"
+								mce_shape="poly" title="Huelva" alt="Huelva"><area href="#jaen" shape="poly"
+								coords="202,31,206,44,200,52,200,76,207,82,204,88,217,103,224,104,229,98,242,94,245,87,257,90,267,85,277,88,285,84,284,75,295,58,305,59,311,48,315,35,300,16,280,23,262,21,246,25,201,31"
+								mce_href="#jaen"
+								mce_coords="202,31,206,44,200,52,200,76,207,82,204,88,217,103,224,104,229,98,242,94,245,87,257,90,267,85,277,88,285,84,284,75,295,58,305,59,311,48,315,35,300,16,280,23,262,21,246,25,201,31"
+								mce_shape="poly" title="Jaén" alt="Jaén"><area href="#almeria" shape="poly"
+								coords="328,65,323,86,319,87,321,96,311,99,301,112,301,120,289,115,283,127,279,129,281,137,276,141,278,145,279,147,274,149,272,152,274,154,297,161,306,149,312,146,322,149,332,158,347,141,361,105,350,100,341,87,341,70,329,65"
+								mce_href="#almeria"
+								mce_coords="328,65,323,86,319,87,321,96,311,99,301,112,301,120,289,115,283,127,279,129,281,137,276,141,278,145,279,147,274,149,272,152,274,154,297,161,306,149,312,146,322,149,332,158,347,141,361,105,350,100,341,87,341,70,329,65"
+								mce_shape="poly" title="Almería" alt="Almería"><area href="#malaga" shape="poly"
+								coords="133,192,125,173,116,171,131,159,134,152,133,149,138,145,141,150,149,143,147,134,159,127,160,121,174,121,176,116,180,121,189,119,194,114,199,134,223,144,230,154,192,156,174,173,157,169,138,184,134,192,133,193,133,191,134,191,132,192,134,191,134,192"
+								mce_href="#malaga"
+								mce_coords="133,192,125,173,116,171,131,159,134,152,133,149,138,145,141,150,149,143,147,134,159,127,160,121,174,121,176,116,180,121,189,119,194,114,199,134,223,144,230,154,192,156,174,173,157,169,138,184,134,192,133,193,133,191,134,191,132,192,134,191,134,192"
+								mce_shape="poly" title="Málaga" alt="Málaga"></map>
+					</p>
+
+					<p style="padding-left: 60px;" mce_style="padding-left: 60px;"><br /></p>
+					<h1 style="padding-left: 60px;" mce_style="padding-left: 60px;"><b><br /></b>
+					</h1>
+				</div>
+				<!--<h2 style="text-align: center;" mce_style="text-align: center;"><a
+												mce_href="http://institucional.us.es/rrcartografia/index.php?option=com_content&view=article&id=124%3Amapatopo2&catid=121%3Aprueba2&Itemid=57"
+												href="http://institucional.us.es/rrcartografia/index.php?option=com_content&view=article&id=124%3Amapatopo2&catid=121%3Aprueba2&Itemid=57"><b>Mapa
+														topográfico de Andalucía 1:10.000 (AutoCAD)</b></a><br /></h2>-->
+
+
+				<h2 style="text-align: center;" mce_style="text-align: center;">Mostrando listado de
+					pueblos en cada
+					provincia:</h2>
+				<br />
+				<div class="table-responsive">
+					<table class="table">
+						<tbody>
+
+
+							<tr class="principal_sevilla" id="sevilla">
+								<td>Sevilla</td>
+								<td>DWG</td>
+								<td>fama</td>
+								<td>local</td>
+
+							</tr>
+							<tr class="pueblo_sevilla">
+								<td>Albaida del Aljarafe</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/albaidaaljarafe/DWG.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><img class="opacidad" src="book-alt.svg" /></td>
+								<td class="enlaces"><a
+										href="https://www.cogitise.es/noticias-covid/albaida-aljarafe-pgou"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_sevilla">
+								<td>Alcalá de Guadaira</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/alcalagdaira/Dwg%20AlcalaGuadaira.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009159499704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://www.alcaladeguadaira.es/contenidos/downloads/ordenanzas/32-1/texto-refundido-nnuu-vigente-2018-con-mp.pdf"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_sevilla">
+								<td>Aljarafe</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/aljarafe/DWG%20Aljarafe.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991011003439704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><img src="city-hall.svg" class="opacidad" /></td>
+							</tr>
+							<tr class="pueblo_sevilla">
+								<td>Arahal</td>
+								<td class="enlaces"><img src="treasure-map-line.svg" class="opacidad" /></td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009321459704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a href="http://urahal.blogspot.com/"><img
+											src="city-hall.svg" /></a></td>
+							</tr>
+							<tr class="pueblo_sevilla">
+								<td>Bormujos</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/bormujos/Bormujos.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009161639704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="http://transparencia.bormujos.es/es/transparencia/indicadores-de-transparencia/indicador/50.E1.1-Plan-General-de-Ordenacion-Urbana-P.G.O.U..-Estudios-textos-y-planos-que-lo-detallan/"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_sevilla">
+								<td>Camas</td>
+								<td class="enlaces"><a><img src="treasure-map-line.svg"
+											onClick="desplegar('tabla_a_desplegar13','estadoT13')" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009161909704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a href="http://www.camas.es/es/urbanismo/"><img
+											src="city-hall.svg" /></a></td>
+							</tr>
+							<!---------------------------------------------------------------------------------->
+							<tr>
+								<td>
+									<table border="1" id="tabla_a_desplegar13" style="display: none;">
+
+
+
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/camas/DWG.rar">DWG</a>
+											</td>
+											
+                                            <td> </td>
+											<td> </td>
+											<td> </td>
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/camas/DWG2.rar">DWG2</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/camas/HOJAS%20PARCELARIO%20CAMAS.rar">Hojas
+													parcelario Camas</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+
+									</table>
+								</td>
+							</tr>
+							<!---------------------------------------------------------------------------------->
+							<tr class="pueblo_sevilla">
+								<td>Carmona</td>
+								<td class="enlaces"><a><img src="treasure-map-line.svg"
+											onClick="desplegar('tabla_a_desplegar12','estadoT12')" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009064049704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a href="https://www.sodecar.org/pgou/"><img
+											src="city-hall.svg" /></a></td>
+							</tr>
+							<!---------------------------------------------------------------------------------->
+							<tr>
+								<td>
+									<table border="1" id="tabla_a_desplegar12" style="display: none;">
+
+
+
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/carmona/1000.rar">1000</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/carmona/2000.rar">2000</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/carmona/OTROS.rar">OTROS</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/carmona/Varios.rar">Varios</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+									</table>
+								</td>
+							</tr>
+							<!---------------------------------------------------------------------------------->
+							<tr class="pueblo_sevilla">
+								<td>Coria del río</td>
+								<td class="enlaces"><img src="treasure-map-line.svg" class="opacidad" /></td>
+								<td class="enlaces"><img src="book-alt.svg" class="opacidad" /></td>
+								<td class="enlaces"><a
+										href="http://transparencia.coriadelrio.es/es/transparencia/indicadores-de-transparencia/indicador/Plan-General-de-Ordenacion-Urbana-PGOU-y-los-mapas-y-planos-que-lo-detallan-00032/"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_sevilla">
+								<td>Esquivel</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/esquivel/DWG.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009161709704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><img src="city-hall.svg" class="opacidad" /></td>
+							</tr>
+							<tr class="pueblo_sevilla">
+								<td>Gelves</td>
+								<td class="enlaces"><img src="treasure-map-line.svg" class="opacidad" /></td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991011005049704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a href="http://www.gelves.es/es/ayuntamiento/pgou/"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_sevilla">
+								<td>Gines</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/gines/Municipio%20de%20Gines.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009161689704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a href="http://www.gelves.es/es/ayuntamiento/pgou/"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_sevilla">
+								<td>La Rinconada</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/larinconada/DWG%20La%20Riconada.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><img src="book-alt.svg" class="opacidad" /></td>
+								<td class="enlaces"><a
+										href="http://transparencia.larinconada.es/es/transparencia/indicadores-de-transparencia/indicador/Plan-General-de-Ordenacion-Urbana-PGOU-y-los-mapas-y-planos-que-lo-detallan-00007/"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_sevilla">
+								<td>Los Molares</td>
+								<td class="enlaces"><img src="treasure-map-line.svg" class="opacidad" /></td>
+								<td class="enlaces"><img src="book-alt.svg" class="opacidad" /></td>
+								<td class="enlaces"><a
+										href="http://www.losmolares.es/export/sites/losmolares/.galleries/documentos-noticias/PLAN_MUNICIPAL_DE_VIVIENDA_Y_SUELO_LOS_MORALES_xSEVILLAx.pdf"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_sevilla">
+								<td>Mairena del Aljarafe</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/mairenaaljfe/DWG%20Mairena.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009161869704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="http://www.mairenadelaljarafe.es/es/ayuntamiento/organismos-y-sociedades/gerencia-municipal-de-urbanismo/Documentos-urbanisticos-aprobados/Planeamiento/planeamiento-general-pgou-e-innovaciones/"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_sevilla">
+								<td>Osuna</td>
+								<td class="enlaces"><img src="treasure-map-line.svg" class="opacidad" /></td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009321429704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="http://transparencia.osuna.es/es/transparencia/indicadores-de-transparencia/indicador/Plan-General-de-Ordenacion-Urbana-PGOU-y-los-mapas-y-planos-que-lo-detallan-00027/"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_sevilla">
+								<td>Salteras</td>
+								<td class="enlaces"><a><img src="treasure-map-line.svg"
+											onClick="desplegar('tabla_a_desplegar11','estadoT11')" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009161849704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="http://transparencia.salteras.es/es/transparencia/indicadores-de-transparencia/indicador/Plan-General-de-Ordenacion-Urbana-PGOU-y-los-mapas-y-planos-que-lo-detallan-00016/"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<!---------------------------------------------------------------------------------->
+							<tr>
+								<td>
+									<table border="1" id="tabla_a_desplegar11" style="display: none;">
+
+
+
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/salteras/1000%20Original%20nucleo%202006%202D.rar">1000</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/salteras/2000%20Original%20nucleo%202006%202D.rar">2000</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/salteras/DWG.rar">DWG</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+
+
+									</table>
+								</td>
+							</tr>
+							<!---------------------------------------------------------------------------------->
+							<tr class="pueblo_sevilla">
+								<td>San Juan del Aznalfarache</td>
+								<td class="enlaces"><a><img src="treasure-map-line.svg"
+											onClick="desplegar('tabla_a_desplegar10','estadoT10')" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009161829704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="http://transparencia.sanjuandeaznalfarache.es/es/transparencia/indicadores-de-transparencia/indicador/Plan-General-de-Ordenacion-Urbana-PGOU-y-los-mapas-y-planos-que-lo-detallan-00018/"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<!---------------------------------------------------------------------------------->
+							<tr>
+								<td>
+									<table border="1" id="tabla_a_desplegar10" style="display: none;">
+
+
+
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/sanjuanaznache/1000.rar">1000</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/sanjuanaznache/2000.rar">2000</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/sanjuanaznache/10000.rar">10000</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/sanjuanaznache/Cartograf%c3%ada%20TM%20lim%c3%adtrofes.rar">Cartografía
+													TM limítrofes</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+										<tr class="pueblo_sevilla">
+
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/sanjuanaznache/DWG.rar">DWG</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+
+									</table>
+								</td>
+							</tr>
+							<!---------------------------------------------------------------------------------->
+							<tr class="pueblo_sevilla">
+								<td>Sanlúcar la Mayor</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/sanlucarmayor/DWG.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009161819704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="http://transparencia.sanlucarlamayor.es/es/transparencia/indicadores-de-transparencia/indicador/Plan-General-de-Ordenacion-Urbana-PGOU-e-Innovaciones-de-Planeamiento/"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_sevilla">
+								<td>Santiponce</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/santiponce/Catastro%20Santiponce.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009161769704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="http://3web.dipusevilla.es/planeamiento/adaptacion_loua/Santiponce_Adapt_P_NNSSPM/89ADPG.pdf"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_sevilla">
+								<td>Sevilla (Área Metropolitana)</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/areametroptana/Sevilla-Aljarafe.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009161619704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://web.urbanismosevilla.org/planeamientopgou/pdfs/02_TR_M_ORDENACION/02_TR_MO_02_MUT_completo.pdf"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_sevilla">
+								<td>Sevilla (Capital)</td>
+								<td class="enlaces"><a><img src="treasure-map-line.svg"
+											onClick="desplegar('tabla_a_desplegar9','estadoT9')" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009161609704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://www.urbanismosevilla.org/areas/planeamiento-desa-urb/pgou-vigente-1"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+
+							<!---------------------------------------------------------------------------------->
+							<tr>
+								<td>
+									<table border="1" id="tabla_a_desplegar9" style="display: none;">
+
+
+
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/1-1000.rar">1-1000</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/Centro%202.rar">Centro
+													2</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/Complejo%20deportivo%20Los%20Bermejales-Sadus.rar">Complejo
+													Deportivo Los Bermejales</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/Cortijo%20El%20Cuarto.rar">Cortijo
+													El Cuarto</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/DWG%20Bellavista.rar">Bellavista</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/DWG%20Isla%20de%20la%20Cartuja.rar">Cartuja</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/DWG%20Los%20Remedios.rar">Los
+													Remedios</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/DWG%20Macarena.rar">Macarena</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/DWG%20Mercasevilla.rar">Mercasevilla</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/DWG%20Parque%20de%20Mar%c3%ada%20Luisa.rar">Parque
+													María Luisa</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/DWG%20Santa%20Justa.rar">Santa
+													Justa</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/DWG%20Sevilla%20General.rar">Sevilla
+													General</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/DWG%20Sevilla%20historica.rar">Sevilla
+													Histórica</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/DWG%20Su%20Eminencia.rar">Su
+													Eminencia</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/DWG%20Valdezorra.rar">Valdezorra</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/Encarnaci%c3%b3n.rar">Encarnación</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/Este%201.rar">Sevilla
+													Este 1</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/Este%202.rar">Sevilla
+													Este 2</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/Heli%c3%b3polis.rar">Heliópolis</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/Hytasa.rar">Hytasa</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/Informacion%20GMU-OPS.rar">Información
+													GMU-OPS</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/Nervion%201.rar">Nervión
+													1</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/Nervion%202.rar">Nervión
+													2</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/SEVILL~8.rar">Sevill~8</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/San%20Jer%c3%b3nimo%20Alamillo.rar">San
+													Jerónimo Alamillo</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/Sevilla%20General%20II.rar">Sevilla
+													General II</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/Sevilla%20sectores%201.rar">Sevilla
+													Sectores 1</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/Sevilla%20sectores%202.rar">Sevilla
+													Sectores 2</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/Sur%201.rar">Sur
+													1</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/Sur%202.rar">Sur
+													2</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/Triana%201.rar">Triana
+													1</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/Triana%202.rar">Triana
+													2</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/Varios%201%20DWG.rar">Varios
+													1</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/Varios%202%20DWG.rar">Varios
+													2</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/Villanueva%20del%20P%c3%adtamo.rar">Villanueva</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/barriociudad%2011.rar">Barrio
+													Ciudad 2011</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/cartografia.500%20Sevilla%20e.rar">Cartografía.500
+													Sevilla</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/cartografia.500%20Sevilla%20montaje%20y%20rustico.rar">Cartografía.500
+													Sevilla Montaje y Rústico</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/cartografia.500%20Sevilla%20s.rar">Cartografía.500
+													Sevilla 20s</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/cartografia.500%20Sevilla%20t.rar">Cartografía.500
+													Sevilla 20t</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/centro%201.rar">Centro
+													1</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/plan%20especial%20La%20Plata.rar">Plan
+													Especial La Plata</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillacapital/rustico-5.rar">Rústico
+													5</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+									</table>
+								</td>
+							</tr>
+							<!---------------------------------------------------------------------------------->
+							<tr class="pueblo_sevilla">
+								<td>Tomares</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/tomares/Tomares.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009161739704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="http://transparencia.tomares.es/es/transparencia/indicadores-de-transparencia/indicador/50.-Esta-publicado-el-Plan-General-de-Ordenacion-Urbana-PGOU-y-los-mapas-y-planos-que-lo-detallan.-00011/"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_sevilla">
+								<td>Utrera</td>
+								<td class="enlaces"><a><img src="treasure-map-line.svg"
+											onClick="desplegar('tabla_a_desplegar8','estadoT8')" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009321439704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://transparencia.utrera.org/project/plan-general-de-ordenacion-urbana-pgou-y-los-mapas-y-planos-que-lo-detallan/"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<!---------------------------------------------------------------------------------->
+							<tr>
+								<td>
+									<table border="1" id="tabla_a_desplegar8" style="display: none;">
+
+
+
+										<tr class="pueblo_sevilla">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/utrera/2000.rar">2000</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+										<tr class="pueblo_sevilla">
+
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/utrera/Bases%20(dwg).rar">Bases</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+										<tr class="pueblo_sevilla">
+
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/utrera/Utrera.rar">Utrera</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+										<tr class="pueblo_sevilla">
+
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/sevillaprovincia/utrera/evoluci%c3%b3n.rar">Evolución</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<!---------------------------------------------------------------------------------->
+						</tbody>
+					</table>
+				</div>
+				<br />
+				<br />
+				<div class="table-responsive">
+					<table class="table">
+						<tbody>
+
+
+							<tr class="principal_cadiz" id="cadiz">
+								<td>Cádiz</td>
+								<td>DWG</td>
+								<td>fama</td>
+								<td>local</td>
+							</tr>
+							<tr class="pueblo_cadiz">
+								<td>Bahía de Cádiz</td>
+								<td class="enlaces"><img src="treasure-map-line.svg" class="opacidad"" /></td>
+																<td class=" enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009321329704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://www.juntadeandalucia.es/medioambiente/portal_web/web/temas_ambientales/ordenacion_territorio/02_planes_ordenacion_territorio/bahia_cadiz/POT_Bahia_Cadiz.pdf"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_cadiz">
+								<td>Barbate</td>
+								<td class="enlaces"><a><img src="treasure-map-line.svg"
+											onClick="desplegar('tabla_a_desplegar7','estadoT7')" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009159299704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://www.barbate.es/el-ayuntamiento/urbanismo/category/43-pgou"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<!---------------------------------------------------------------------------------->
+							<tr>
+								<td>
+									<table border="1" id="tabla_a_desplegar7" style="display: none;">
+
+
+
+										<tr class="pueblo_cadiz">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/barbate/1000.rar">1000</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+										<tr class="pueblo_cadiz">
+
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/barbate/2000.rar">2000</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+
+
+
+									</table>
+								</td>
+							</tr>
+							<!---------------------------------------------------------------------------------->
+							<tr class="pueblo_cadiz">
+								<td>Cádiz (Capital)</td>
+								<td class="enlaces"><img src="treasure-map-line.svg" class="opacidad"" /></td>
+																<td class=" enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009346039704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://transparencia.cadiz.es/plan-general-de-ordenacion-urbana-pgou/"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_cadiz">
+								<td>Ceuta</td>
+								<td class="enlaces"><a><img src="treasure-map-line.svg"
+											onClick="desplegar('tabla_a_desplegar6','estadoT6')" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009160449704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a href="http://www.ceuta.es/pgou/"><img src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<!---------------------------------------------------------------------------------->
+							<tr>
+								<td>
+									<table border="1" id="tabla_a_desplegar6" style="display: none;">
+
+
+
+										<tr class="pueblo_cadiz">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/ceuta/DWG%20Ceuta.rar">DWG
+													Ceuta</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+										<tr class="pueblo_cadiz">
+
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/ceuta/DWG%20Ceuta%20A.rar">DWG
+													Ceuta A</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+
+										<tr class="pueblo_cadiz">
+
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/ceuta/DWG%20Ceuta%20B.rar">DWG
+													Ceuta B</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+
+										<tr class="pueblo_cadiz">
+
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/ceuta/DWG%20Ceuta%20C.rar">DWG
+													Ceuta C</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_cadiz">
+
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/ceuta/DWG%20Ceuta%20D.rar">DWG
+													Ceuta D</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_cadiz">
+
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/ceuta/DWG%20Ceuta%20E.rar">DWG
+													Ceuta E</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_cadiz">
+
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/ceuta/DWG%20Ceuta%20EUROPAN.rar">DWG
+													Ceuta EUROPAN</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_cadiz">
+
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/ceuta/DWG%20Ceuta%20F.rar">DWG
+													Ceuta F</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_cadiz">
+
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/ceuta/DWG%20Ceuta%20G.rar">DWG
+													Ceuta G</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_cadiz">
+
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/ceuta/DWG%20Ceuta%20H.rar">DWG
+													Ceuta H</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_cadiz">
+
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/ceuta/DWG%20Ceuta%20I.rar">DWG
+													Ceuta I</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+										<tr class="pueblo_cadiz">
+
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/ceuta/DWG%20Ceuta%20J.rar">DWG
+													Ceuta J</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<!---------------------------------------------------------------------------------->
+							<tr class="pueblo_cadiz">
+								<td>Chiclana de la Frontera</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/chiclana/Base5000.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><img src="book-alt.svg" class="opacidad"" /></td>
+																<td class=" enlaces"><a
+										href="https://www.chiclana.es/delegaciones-y-servicios/urbanismo/plan-general-de-ordenacion-urbanistica-pgou/"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_cadiz">
+								<td>Conil de la Frontera</td>
+								<td class="enlaces"><img src="treasure-map-line.svg" class="opacidad"" /></td>
+																<td class=" enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009160449704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://www.conildelafrontera.es/areas-y-servicios-municipales/urbanismo"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_cadiz">
+								<td>Jerez de la Frontera</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/jerezftra/DWG%20Jerez.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009161409704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a href="https://www.jerez.es/webs_municipales/urbanismo/pgou/"><img
+											src="city-hall.svg" /></a></td>
+							</tr>
+							<tr class="pueblo_cadiz">
+								<td>Palmones</td>
+								<td class="enlaces"><img src="treasure-map-line.svg" class="opacidad"" /></td>
+																<td class=" enlaces"><img src="book-alt.svg" class="opacidad"" /></td>
+																<td class=" enlaces"><a
+										href="http://www.losbarrios.es/portal-de-transparencia/urbanismo-obras-publicas-y-medio-ambiental/plan-general-de-ordenacion-urbana-pgou/"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_cadiz">
+								<td>Puerto de Santa María</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/puertosmaria/Dwg.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009159249704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="http://www.elpuertodesantamaria.es/index.php?art_id=901&men_id=207"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_cadiz">
+								<td>Puerto Real</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/puertoreal/Puerto%20Real.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009160059704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a href="http://www.puertoreal.es/riim/pgou/aprobdefpgou.nsf"><img
+											src="city-hall.svg" /></a></td>
+							</tr>
+							<tr class="pueblo_cadiz">
+								<td>Rota</td>
+								<td class="enlaces"><a><img src="treasure-map-line.svg"
+											onClick="desplegar('tabla_a_desplegar5','estadoT5')" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009160549704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://www.aytorota.es/espacio-ciudadano/delegaciones/urbanismo.html"><img
+											src="city-hall.svg" /></a>
+								</td>
+								<!---------------------------------------------------------------------------------->
+							<tr>
+								<td>
+									<table border="1" id="tabla_a_desplegar5" style="display: none;">
+
+
+
+										<tr class="pueblo_cadiz">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/rota/Casco%20historico-suelo%20urbano.rar">Casco
+													histórico</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+										<tr class="pueblo_cadiz">
+
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/rota/DWG.rar">DWG</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+
+										<tr class="pueblo_cadiz">
+
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/rota/SueloUrbano.rar">Suelo
+													urbano</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+
+										<tr class="pueblo_cadiz">
+
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/rota/Varios.rar">Varios</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<!---------------------------------------------------------------------------------->
+
+							<tr class="pueblo_cadiz">
+								<td>San Fernando</td>
+								<td class="enlaces "><a><img src="treasure-map-line.svg"
+											onClick="desplegar('tabla_a_desplegar4','estadoT4')" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009159319704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="http://www.sanfernando.es/ayto/visor.asp?hidOptNav=1182"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+
+							<!---------------------------------------------------------------------------------->
+							<tr>
+								<td>
+									<table border="1" id="tabla_a_desplegar4" style="display: none;">
+
+
+
+										<tr class="pueblo_cadiz">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/sanfernando/DWG%20San%20Fernando.rar">San
+													Fernando</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+										<tr class="pueblo_cadiz">
+
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/sanfernando/DWG%20San%20Fernando2.rar">San
+													Fernando2</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+
+
+									</table>
+								</td>
+							</tr>
+							<!---------------------------------------------------------------------------------->
+							<tr class="pueblo_cadiz">
+								<td>San Roque</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/sanroque/DWG%20San%20Roque.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009159169704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="http://www.sanroque.es/informacion-urbanistica/plan-general-de-ordenacion-urbana-aprobado?language=es"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_cadiz">
+								<td>Sanlúcar de Barrameda</td>
+								<td class="enlaces"><a><img src="treasure-map-line.svg"
+											onClick="desplegar('tabla_a_desplegar3','estadoT3')" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009161359704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a href="http://www.gmusanlucar.es/pgou"><img
+											src="city-hall.svg" /></a></td>
+							</tr>
+							<!---------------------------------------------------------------------------------->
+							<tr>
+								<td>
+									<table border="1" id="tabla_a_desplegar3" style="display: none;">
+
+
+
+										<tr class="pueblo_cadiz">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/sanlucarbda/03-planimetria-1000.rar">Planimetría</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+										<tr class="pueblo_cadiz">
+
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/sanlucarbda/06-09-10-urban%c3%adstica-alineaciones-gesti%c3%b3n.rar">Urbanística
+													alineaciones</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+
+										<tr class="pueblo_cadiz">
+
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/sanlucarbda/08-programa.rar">Programa</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+										<tr class="pueblo_cadiz">
+
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/sanlucarbda/DWG.rar">DWG</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+
+										<tr class="pueblo_cadiz">
+
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/sanlucarbda/Sanlucar%20de%20Barrameda.rar">Sanlúcar
+													de Barrameda</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+										<tr class="pueblo_cadiz">
+
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cadiz/sanlucarbda/solar%20con%20ESTADO%20DE%20LA%20EDIFICACION.rar">Solar
+													con Estado de edificación</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+									</table>
+								</td>
+							</tr>
+							<!---------------------------------------------------------------------------------->
+							<tr class="pueblo_cadiz">
+								<td>Tarifa</td>
+								<td class="enlaces"><img src="treasure-map-line.svg" class="opacidad"" /></td>
+																<td class=" enlaces"><img src="book-alt.svg" class="opacidad"" /></td>
+																<td class=" enlaces"><a href="https://www.aytotarifa.com/pgou/"><img src="city-hall.svg" /></a></td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+				<br />
+				<br />
+				<div class="table-responsive">
+					<table class="table">
+						<tbody>
+
+
+							<tr class="principal_malaga" id="malaga">
+								<td>Málaga</td>
+								<td>DWG</td>
+								<td>fama</td>
+								<td>local</td>
+							</tr>
+							<tr class="pueblo_malaga">
+								<td>Málaga (Capital)</td>
+
+								<td class="enlaces"><a><img src="treasure-map-line.svg"
+											onClick="desplegar('tabla_a_desplegar2','estadoT2')" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009159499704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="http://www.malaga.eu/recursos/urbanismo/pgou_ap2/PGOU2011AD1.html" /><img
+										src="city-hall.svg" /></a>
+
+
+
+								</td>
+
+								<!------------------------------------------------------------------------>
+							<tr>
+								<td>
+									<table border="1" id="tabla_a_desplegar2" style="display: none;">
+
+
+
+										<tr class="pueblo_malaga">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/malaga/malaga/DWG%20Malaga.rar">Málaga
+												</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+										</tr>
+
+										<tr class="pueblo_malaga">
+
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/malaga/malaga/DWG%20Malaga2.rar">Málaga
+													1</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+										<tr class="pueblo_malaga">
+
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/malaga/malaga/DWG%20Malaga3.rar">Málaga
+													3</a></td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+										</tr>
+
+									</table>
+								</td>
+							</tr>
+							<!------------------------------------------------------------------------>
+							<tr class="pueblo_malaga">
+								<td>Marbella</td>
+								<td class="enlaces"><a
+										href="http://www.us.debiblio.com/login?url=https://biblus.us.es/fama2/arq/rrcartografia/malaga/marbella/marbella5000.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><img src="book-alt.svg" class="opacidad"" /></td>
+																<td class=" enlaces"><a href="https://urbanismo.marbella.es/pgou.html"><img src="city-hall.svg" /></a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<br />
+				<br />
+				<div class="table-responsive">
+					<table class="table">
+						<tbody>
+
+
+							<tr class="principal_granada" id="granada">
+								<td>Granada</td>
+								<td>DWG</td>
+								<td>fama</td>
+								<td>local</td>
+							</tr>
+							<tr class="pueblo_granada">
+								<td>Granada (Capital)</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/granada/granada/DWG.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009195079704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a href="http://www.granada.org/inet/wpgo.nsf"><img
+											src="city-hall.svg" /></a></td>
+							</tr>
+							<tr class="pueblo_granada">
+								<td>Guadix</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/granada/guadix/H4-3.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><img src="book-alt.svg" class="opacidad"" /></td>
+																<td class=" enlaces"><a href="https://guadix.es/urbanismo-patrimonio/"><img src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_granada">
+								<td>Motril</td>
+								<td class="enlaces"><img src="treasure-map-line.svg" class="opacidad"" /></td>
+																<td class=" enlaces"><img src="book-alt.svg" class="opacidad"" /></td>
+																<td class=" enlaces"><a
+										href="http://www.motril.es/index.php?id=603&tx_planos_planos%5Btermino%5D=MOTRIL&tx_planos_planos%5Baction%5D=listarTermino&tx_planos_planos%5Bcontroller%5D=Plano&cHash=3cfc23cb5c22c5f523ffcfe95dc721b6"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<br />
+				<br />
+				<div class="table-responsive">
+					<table class="table">
+						<tbody>
+
+
+							<tr class="principal_almeria" id="almeria">
+								<td>Almería</td>
+								<td>DWG</td>
+								<td>fama</td>
+								<td>local</td>
+							</tr>
+							<tr class="pueblo_almeria">
+								<td>Carboneras</td>
+								<td class="enlaces"><a
+										href="http://www.us.debiblio.com/login?url=https://biblus.us.es/fama2/arq/rrcartografia/Almeria/carboneras/"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009321339704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="http://www.ayuntamientocarboneras.es/documentos/urbanismo"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_almeria">
+								<td>Comarca del Mármol</td>
+								<td class="enlaces"><a
+										href="http://www.us.debiblio.com/login?url=https://biblus.us.es/fama2/arq/rrcartografia/Almeria/comarcamarmol/"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><img src="book-alt.svg" class="opacidad"" /></td>
+																<td class=" enlaces"><img src="city-hall.svg" class="opacidad"" /></td>
+														</tr>
+														<tr class=" pueblo_almeria">
+								<td>Comarca Llano Central-Levante</td>
+								<td class="enlaces"><a
+										href="http://www.us.debiblio.com/login?url=https://biblus.us.es/fama2/arq/rrcartografia/Almeria/comarcallanocentral/"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009321579704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://www.juntadeandalucia.es/export/drupaljda/08_05_normativa.pdf"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_almeria">
+								<td>La Vega de Aca</td>
+								<td class="enlaces"><a
+										href="http://www.us.debiblio.com/login?url=https://biblus.us.es/fama2/arq/rrcartografia/Almeria/vegaaca/"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><img src="book-alt.svg" class="opacidad"" /></td>
+																<td class=" enlaces"><a
+										href="https://almeria2030.es/wp-content/uploads/2020/10/Plan-de-ordenacion-del-territorio-de-la-Aglomeracion-Urbana-de-Almeria.pdf"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_almeria">
+								<td>Purchena</td>
+								<td class="enlaces"><img src="treasure-map-line.svg" class="opacidad"" /></td>
+																<td class=" enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009321329704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://www.purchena.es/Servicios/cmsdipro/index.nsf/informacion.xsp?p=Purchena&documentId=55897CB62D20D2F1C1257723003005B2"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_almeria">
+								<td>Urrácal</td>
+								<td class="enlaces"><img src="treasure-map-line.svg" class="opacidad"" /></td>
+																<td class=" enlaces"><img src="book-alt.svg" class="opacidad"" /></td>
+																<td class=" enlaces"><a href="https://ws132.juntadeandalucia.es/situadifusion/pages/search2.jsf"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<br />
+				<br />
+				<div class="table-responsive">
+					<table class="table">
+						<tbody class="tabla_cordoba">
+
+
+							<tr class="principal_cordoba" id="cordoba">
+								<td>Córdoba</td>
+								<td>DWG</td>
+								<td>fama</td>
+								<td>local</td>
+							</tr>
+							<tr class="pueblo_cordoba">
+								<td>Córdoba (Capital)</td>
+								<td class="enlaces"><a><img src="treasure-map-line.svg"
+											onClick="desplegar('tabla_a_desplegar','estadoT')" /></a>
+								</td>
+								<td class="enlaces opacidad"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991011003339704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces opacidad"><a
+										href="https://ws132.juntadeandalucia.es/situadifusion/pages/search2.jsf"><img
+											src="city-hall.svg" /></a>
+								</td>
+
+								<!---------------------------------------------------------------------------------->
+							<tr>
+								<td>
+									<table border="1" id="tabla_a_desplegar" style="display: none;">
+
+
+
+										<tr class="pueblo_cordoba">
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cordoba/cordoba/DWG.rar">Córdoba</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+										<tr class="pueblo_cordoba">
+
+
+											<td><a style="color:black;"
+													href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cordoba/montoro/DWG%20Montoro.rar">Montoro</a>
+											</td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+
+
+
+										</tr>
+
+
+
+
+
+
+									</table>
+								</td>
+							</tr>
+							<!---------------------------------------------------------------------------------->
+
+							<tr class="pueblo_cordoba">
+								<td>Montoro</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/cordoba/montoro/DWG%20Montoro.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991011003339704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://ws132.juntadeandalucia.es/situadifusion/pages/search2.jsf"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+
+
+
+
+						</tbody>
+					</table>
+				</div>
+				<br />
+				<br />
+				<div class="table-responsive">
+					<table class="table">
+						<tbody class="tabla_Huelva">
+
+
+							<tr class="principal_huelva" id="huelva">
+								<td>Huelva</td>
+								<td>DWG</td>
+								<td>fama</td>
+								<td>local</td>
+							</tr>
+							<tr class="pueblo_huelva">
+								<td>Alájar</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/huelva/alajar/DWG.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009321859704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="http://www.alajar.es/es/Urbanismo/normativa-urbanistica/"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_huelva">
+								<td>Alosno</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/huelva/alosno/DWG.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><img src="book-alt.svg" class="opacidad"" /></td>
+																<td class=" enlaces"><a href="http://www.alosno.es/es/areas-tematicas/urbanismo/pgou/"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_huelva">
+								<td>Cabezas Rubias</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/huelva/cabezasrubias/CABEZAS%20RUBIAS.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009321839704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><img src="city-hall.svg" class="opacidad"" /></td>
+														</tr>
+														<tr class=" pueblo_huelva">
+								<td>Calañas</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/huelva/cala%f1as/"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><img src="book-alt.svg" class="opacidad" /></td>
+								<td class=" enlaces"><a
+										href="http://www.calanas.es/es/ayuntamiento/sala-de-prensa/noticia-en-detalle/Aprobacion-del-Plan-General-de-Ordenacion-Urbanistica-de-Calanas/"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_huelva">
+								<td>Cerro de Andévalo, El</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/huelva/cerroandevalo/DWG.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><img src="book-alt.svg" class="opacidad" /></td>
+								<td class="enlaces"><a
+										href="http://www.elcerrodeandevalo.es/es/areas-tematicas/Urbanismo/pgou/planos/"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_huelva">
+								<td>Huelva (capital)</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/huelva/huelva/DWG%20Huelva.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009158539704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="http://www.huelva.es/portal/es/plan-general-de-ordenaci%C3%B3n-urbana-y-modificaciones-puntuales-del-pgou"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_huelva">
+								<td>Lepe</td>
+								<td class="enlaces"><img src="treasure-map-line.svg" class="opacidad"" /></td>
+																<td class=" enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009321809704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><img src="city-hall.svg" class="opacidad"" /></td>
+														</tr>
+														<tr class=" pueblo_huelva">
+								<td>Paymogo</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/huelva/paymogo/DWG.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><img src="book-alt.svg" class="opacidad"" /></td>
+																<td class=" enlaces"><img src="city-hall.svg" class="opacidad"" /></td>
+														</tr>
+														<tr class=" pueblo_huelva">
+								<td>Punta Umbría</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/huelva/puntaumbria/DWG.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009321779704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="http://www.puntaumbria.es/opencms/opencms/puntaumbria/content/urba/info/info_planeamiento-urbanistico-vigente.html"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_huelva">
+								<td>Tharsis</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/huelva/tharsis/THARSIS.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><img src="book-alt.svg" class="opacidad"" /></td>
+																<td class=" enlaces"><a href="http://www.alosno.es/es/areas-tematicas/urbanismo/pgou/"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_huelva">
+								<td>Villanueva de las Cruces</td>
+								<td class="enlaces"><a
+										href="https://biblus--us--es.us.debiblio.com/fama2/arq/rrcartografia/huelva/villanuevacruces/DWG.rar"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><img src="book-alt.svg" class="opacidad"" /></td>
+																<td class=" enlaces"><a
+										href="http://www.villanuevadelascruces.es/export/sites/vvadelascruces/es/ayuntamiento/publicaciones-oficiales/.galleries/publicaciones-oficiales/pgou/pgou-textos/ME-Memoria.pdf"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+
+
+
+						</tbody>
+					</table>
+				</div>
+				<br />
+				<br />
+				<div class="table-responsive">
+					<table class="table">
+						<tbody class="table_Jaen">
+
+
+							<tr class="principal_jaen" id="jaen">
+								<td>Jaen</td>
+								<td>DWG</td>
+								<td>fama</td>
+								<td>local</td>
+							</tr>
+							<tr class="pueblo_jaen">
+								<td>Baeza</td>
+								<td class="enlaces"><a
+										href="http://www.us.debiblio.com/login?url=https://biblus.us.es/fama2/arq/rrcartografia/Jaen/baeza/"><img
+											src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009321569704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://www.baeza.net/el-ayuntamiento-auto/plan-general-ordenacion-urbana/"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+							<tr class="pueblo_jaen">
+								<td>Úbeda</td>
+								<td class="enlaces opacidad"><a><img src="treasure-map-line.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="https://fama.us.es/discovery/fulldisplay?docid=alma991009321529704987&context=L&vid=34CBUA_US:VU1&search_scope=all_data_not_idus&tab=all_data_not_idus&lang=es"><img
+											src="book-alt.svg" /></a>
+								</td>
+								<td class="enlaces"><a
+										href="http://www.ladelineacion.com/templates/schizope_man/archivos%20web/Avance%20Plan%20General/Memoria.pdf"><img
+											src="city-hall.svg" /></a>
+								</td>
+							</tr>
+
+
+						</tbody>
+					</table>
+				</div>
+				<br />
+				<br />
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="jquery.rwdImageMaps.min.js"></script>
+	<script>
+		$(document).ready(function (e) {
+			$('img[usemap]').rwdImageMaps();
+
+
+		});
+	</script>
+
+
+	<!--<audio controls>
+				<source src="C:\Users\Nelty\OneDrive\Escritorio\Proyectos Códigos\Proyecto Cartografía\Himno.mp3"
+						type="audio/mp3">
+				Tu navegador no soporta audio HTML5.
+		</audio>-->
+</body>
+
+</html>
